@@ -1,0 +1,24 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,50,50)
+  Background = &HBFBFBF&
+  Text = ("fun")
+  { Button1 Button
+    MoveScaled(3,2,20,5)
+    Text = ("steep motor on")
+  }
+  { Button2 Button
+    MoveScaled(4,10,19,5)
+    Text = ("steep motor off")
+  }
+  { Slider1 Slider
+    MoveScaled(27,6,20,4)
+    MinValue = 1
+    Step = 10
+  }
+  { Label1 Label
+    MoveScaled(27,3,18,2)
+    Text = ("speed")
+  }
+}
