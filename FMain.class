@@ -9,13 +9,15 @@ Public Sub Form_Open()
 End
 
 Public Sub Button1_Click()
-  Shell "killall sound;sleep(0.1)"
+  Shell "killall sound"
+  Sleep 1
   Shell "sh -c 'sound " & Str(Slider1.Value) & " 59' &"
   Print "sh -c 'sound " & Str(Slider1.Value) & " 59' &"
 End
 
 Public Sub Button2_Click()
   Shell "killall sound"
+  Sleep 1
   Shell "gpio write 7 0"
   Print "fun off"
 
